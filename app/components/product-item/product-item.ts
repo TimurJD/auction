@@ -10,5 +10,5 @@ import {Product} from '../../services/product-service';
     ]
 })
 export default class ProductItemComponent {
-    @Input() product: Product;
+    @Input() private product: Product;
 }

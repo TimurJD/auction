@@ -9,8 +9,8 @@ export class Product {
 }
 
 export class ProductService {
-    getProducts(): Array<Product> {
-        return products.map(p => new Product(p.id, p.title, p.price, p.rating, p.description, p.categories));
+    public getProducts(): Array<Product> {
+        return products.map(product => new Product(product.id, product.title, product.price, product.rating, product.description, product.categories));
     }
 }
 

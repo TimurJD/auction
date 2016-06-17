@@ -4,8 +4,4 @@ import {Component} from '@angular/core';
     selector   : 'auction-navbar',
     templateUrl: 'app/components/navbar/auction-navbar.html'
 })
-export default class NavbarComponent {
-    constructor() {
-        console.log('welcome to the jungle');
-    }
-}
+export default class NavbarComponent {}
