@@ -3,21 +3,21 @@ import {Component} from '@angular/core';
 
 @Component({
     selector: 'app',
-    template: '<h1>{{name}}</h1>'
+    template: '<h1>{{message}}</h1>'
 })
 class AppComponent {
-    private name: string;
+    private message: string;
 
     constructor() {
-        this.name = 'Welcome to the Jungle!';
+        this.message = 'Welcome to the Jungle!';
     }
 
-    public setName(name: string): void {
-        this.name = name;
+    public setName(message: string): void {
+        this.message = message;
     }
 
     public getName(): string {
-        return this.name;
+        return this.message;
     }
 }
 
