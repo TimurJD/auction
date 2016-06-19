@@ -25,9 +25,13 @@ import {Product, ProductService} from '../../services/product-service';
     ]
 })
 export default class ApplicationComponent {
-    private products: Array<Product>;
+    private productService: ProductService;
+    
+    constructor(productService: ProductService) {
+        this.productService = productService;
+    }
 
-    constructor(private productService: ProductService) {
-        this.products = this.productService.getProducts();
+    public getProducts(): Array<Product> {
+        return this.productService.getProducts();
     }
 }

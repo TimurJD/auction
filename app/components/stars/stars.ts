@@ -6,9 +6,9 @@ import {Component, Input, OnInit} from '@angular/core';
     styleUrls  : [`app/components/stars/stars.css`]
 })
 export default class StarsComponent implements OnInit {
-    @Input() private count: number = 5;
-    @Input() private rating: number = 0;
-    private stars: boolean[] = [];
+    @Input() count: number = 5;
+    @Input()rating: number = 0;
+    stars: boolean[] = [];
 
     public ngOnInit(): void {
         for(let i = 1; i <= this.count; i++) {
