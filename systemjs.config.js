@@ -2,9 +2,14 @@ System.config({
     transpiler       : 'typescript',
     typescriptOptions: {emitDecoratorMetadata: true},
     map              : {
-        'app'     : 'app',
-        'rxjs'    : 'node_modules/rxjs',
-        '@angular': 'node_modules/@angular'
+        'rxjs': 'node_modules/rxjs',
+
+        '@angular/core'                    : 'node_modules/@angular/core',
+        '@angular/common'                  : 'node_modules/@angular/common',
+        '@angular/compiler'                : 'node_modules/@angular/compiler',
+        '@angular/router'                  : 'node_modules/@angular/router',
+        '@angular/platform-browser'        : 'node_modules/@angular/platform-browser',
+        '@angular/platform-browser-dynamic': 'node_modules/@angular/platform-browser-dynamic'
     },
     packages         : {
         'app'                              : {main: 'main.ts', defaultExtension: 'ts'},
